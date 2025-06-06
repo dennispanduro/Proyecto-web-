@@ -56,6 +56,10 @@ nav div ul {
 /* Estilos portada*/
 
 
+
+
+
+
 /* Estilos servicios*/
 
 .servicios {
@@ -84,8 +88,6 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     padding: 25px;
     width: 320px;
-    
-    transition: transform 0.3s ease-in-out;
 }
 
 
@@ -108,5 +110,166 @@ h2 {
     font-size: 24px;
     margin-top: 12px;
     color: #ffffff;
+}
+
+/* Estilos vision*/
+
+.vision {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  display: flex;
+  
+}
+
+.vision img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.vision div {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.vision .titulo-seccion {
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.vision .vision-text {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+/* Estilos mision*/
+
+.mision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    background-color: #ffffff;
+}
+
+.mision-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    gap: 12px;
+    
+}
+
+.contenido-mision {
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.titulo-seccion {
+    font-size: 64px;
+    font-family: "Intro Bold",sans-serif;
+    font-weight: bold;
+    color: #353535;
+    margin-bottom: 15px;
+}
+
+.mision-text {
+    padding-left: 20px;
+    
+    font-family: "Intro regular",sans-serif;
+    font-size: 28px;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #74A97C;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilos footer*/
+
+footer {
+    text-align: center;
+    background-color: #FFC063;
+    padding: 46px 150px 46px 175px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+footer div {
+    flex: 1;
+    min-width: auto;
+    margin: 20px;
+}
+
+footer div p {
+    margin-right: 20px;
+    font-size: 24px;
+    font-family: "Intro book";
+}
+
+.titulo-footer {
+    font-size: 36px;
+    font-family: "Intro black";
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 18px 0;
+    font-size: 16px;
+    font-family: "Intro book";
+}
+
+footer img {
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.2);
 }
 
