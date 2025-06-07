@@ -148,29 +148,11 @@ h2 {
   max-width: 600px;
 }
 
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-
-
-
-
 /* Estilos mision*/
 
 .mision {
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,40 +209,55 @@ button:hover {
 /* Estilos footer*/
 
 footer {
-    text-align: center;
     background-color: #FFC063;
-    padding: 46px 150px 46px 175px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+}
+
+.container2{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.wrapper {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
-    text-align: left;
+    padding:  46px 175px 46px 175px;
 }
 
-footer div {
-    flex: 1;
-    min-width: auto;
-    margin: 20px;
+.seccio-footer {
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 20px;
 }
 
-footer div p {
-    margin-right: 20px;
+.wrapper .seccio-footer p {
+    margin-bottom: 30px;
     font-size: 24px;
-    font-family: "Intro book";
+    line-height: 24px;
 }
 
 .titulo-footer {
     font-size: 36px;
+    margin-bottom: 10px;
     font-family: "Intro black";
 }
 
-footer ul {
-    list-style-type: none;
+.seccio-footer ul {
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-footer ul li {
-    margin: 18px 0;
+.seccio-footer ul li {
+    margin-bottom: 18px;
     font-size: 16px;
-    font-family: "Intro book";
+    font-family: "Intro Book";
 }
 
 footer img {
