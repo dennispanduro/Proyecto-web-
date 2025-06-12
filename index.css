@@ -2,48 +2,66 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 /* Estilos generales del nav */
 nav {
     background-color: #FFC063;
-    padding: 20px 40px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1em;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
-nav .adopet {
+/* Logo "Adopet" */
+.adopet {
     color: #9A6211;
-    font-size: 40px; 
-    font-family: "Intro Black";
+    font-size: 40px;
+    font-weight: bold;
     text-decoration: none;
 }
 
-nav div ul {
-    font-size: 15px;
-    color: white;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* Contenedor de navegación */
+.nav {
     display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
-.boton-navegacion, .boton-registrar {
-    font-size: 1em;
+/* Menú de navegación */
+.nav ul {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Enlaces del menú */
+.boton-navegacion {
     text-decoration: none;
     color: white;
-    padding: 1em 1.5em; 
-    border-radius: 0.8em; 
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s;
 }
 
+.boton-navegacion:hover,
+.boton-navegacion:focus {
+    color: #9A6211;
+}
+
+/* Botón de registro */
 .boton-registrar {
-    margin-left: 1em;
+    margin: 0;
+    font-size: 14px;
+    border-radius: 12px;
     background-color: white;
     color: #FFC063;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -54,6 +72,55 @@ nav div ul {
 
 /* Estilos portada*/
 
+.portada {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.portada img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.contenido.portada {
+    
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.contenido.portada h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.contenido.portada p {
+    font-size: 1.2em;
+    color: white;
+    margin: 10px 0;
+}
+
+.contenido.portada button {
+    background-color: #8c6d4f;
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenido.portada button:hover {
+    background-color: #6b4f3a;
+}
 
 
 
@@ -205,67 +272,56 @@ button:hover {
 }
 
 
-/* Estilos footer*/
+/* Estilos footer */
 
 footer {
     background-color: #FFC063;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding-top: 80px;
-}
-
-.container2{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 12px;
-}
-
-.wrapper {
+    color: #5C3B09;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding:  46px 175px 46px 175px;
+    padding: 40px 20px;
+    font-family: "Intro", sans-serif;
 }
 
-.seccio-footer {
-    width: calc(20% - 30px);
-    margin: 0 15px 50px;
-    padding: 0 20px;
-}
-
-.wrapper .seccio-footer p {
-    margin-bottom: 30px;
-    font-size: 24px;
-    line-height: 24px;
+footer div {
+    max-width: 250px;
+    margin: 10px;
 }
 
 .titulo-footer {
     font-size: 36px;
-    margin-bottom: 10px;
-    font-family: "Intro black";
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.seccio-footer ul {
+footer p {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-.seccio-footer ul li {
-    margin-bottom: 18px;
-    font-size: 16px;
-    font-family: "Intro Book";
+footer ul li {
+    font-family: "Montserrat",sans-serif;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 footer img {
-    margin: 5px;
+    margin-right: 0;
+    margin-top: 10px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s;
 }
 
 footer img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-

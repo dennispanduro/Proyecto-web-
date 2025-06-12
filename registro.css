@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 
 nav {
     background-color: #FFC063;
@@ -68,105 +70,100 @@ nav {
     color: white;
 }
 
-/* Estilos categorias */
-.title-tienda {
-    text-align: center;
-    padding: 20px 15px;
-    color: #353535;
+
+/* Estilos footer */
+
+form { 
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px 50px;
+  background-color: #52A9F0;
+  border-radius: 41px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-form {
+    align-items: center;
+    font-family: "Intro Black";
+}
+
+.content-form h1 {
     font-size: 64px;
 }
 
-.section-categorias {
-    display: flex;
+
+form div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border: none;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+input[type="checkbox"] {
     justify-content: center;
-    margin: 20px;
-    gap: 48px;
-    font-size: 25px;
-    font-family: "Inter";
+    margin-right: 10px;
+    transform: scale(1.2);
 }
 
-h5 {
-    background-color: #FFC063;
-    padding: 10px 58px;
-    color: white;
-    font-family: "Inter Regular",sans-serif;
-    font-weight: 100;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+form div:last-of-type {
+  flex-direction: row;
+  align-items: center;
+}
+
+.span {
+  color: #0077ff;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 110px;
 }
 
 
-.section-categorias h5:hover {
-    background-color: #e0a742;
-    transform: translateY(-2px);
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #0077ff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-/* Estilos generales productos */
-.products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 20px;
-    background-color: #f7fff8; /* Fondo suave opcional */
-    gap: 30px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+button[type="submit"]:hover {
+  background-color: #005fcc;
 }
 
-/* Contenedor de cada fila de tarjetas */
-.cards-productos {
-    display: flex;
-    flex-wrap: wrap;
+.contenido-final {
     justify-content: center;
-    align-items: center;
-    gap: 30px;
 }
 
-/* Tarjeta individual */
-.card-productos {
-    background-color: #B7DFBD;
-    border-radius: 16px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
 
-.card-productos:hover {
-    transform: scale(1.03);
-}
 
-.card-productos img {
-    max-width: 100%;
-    margin: 0;
-}
-
-/* Texto del producto */
-.card-productos p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #47764E;
-    font-family: "Intro Black Alt", sans-serif;
-    font-weight: 300;
-    margin-bottom: 15px;
-}
-
-/* Botón de comprar */
-.card-productos button {
-    background-color: #47764E;
-    color: white;
-    padding: 12px 30px;
-    font-size: 14px;
-    font-weight: 500;
-    border: none;
-    border-radius: 46px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.card-productos button:hover {
-    background-color: #355a3a;
-}
 
 /* Estilos footer */
 
