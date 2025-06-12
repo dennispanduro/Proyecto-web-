@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 3px;
     padding: 0;
     box-sizing: border-box;
     
@@ -87,10 +87,16 @@ form {
     font-family: "Intro Black";
 }
 
-.content-form h1 {
-    font-size: 64px;
+.content-form p {
+    font-size: 15px;
+    font-family: "Montserrat";
+    color: #333436;
 }
 
+.content-form h1 {
+    font-size: 55px;
+    color: #333436;
+}
 
 form div {
   margin-bottom: 20px;
@@ -99,19 +105,19 @@ form div {
 }
 
 label {
+  font-size: 14px;
   margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
+  font-family: "Montserrat";
+  font-weight: 200;
+  color: white;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="number"] {
   border: none;
-  padding: 10px 14px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
   transition: border 0.3s ease;
 }
 
@@ -123,6 +129,7 @@ input[type="number"]:focus {
 }
 
 input[type="checkbox"] {
+    
     justify-content: center;
     margin-right: 10px;
     transform: scale(1.2);
@@ -133,23 +140,28 @@ form div:last-of-type {
   align-items: center;
 }
 
+.recuerdame {
+    font-weight: 800;
+    color: #333436;
+}
+
 .span {
-  color: #0077ff;
-  font-size: 0.9rem;
+  color: #333436;
   cursor: pointer;
-  text-decoration: underline;
-  margin-left: 110px;
+  text-decoration: none;
+  margin-left: 100px;
 }
 
 
 button[type="submit"] {
+  font-family: "Intro Black";
   width: 100%;
-  padding: 12px;
-  background-color: #0077ff;
+  padding: 10px;
+  background-color: #333436;
   color: white;
-  font-size: 1rem;
+  font-size: 24px;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -161,9 +173,6 @@ button[type="submit"]:hover {
 .contenido-final {
     justify-content: center;
 }
-
-
-
 
 /* Estilos footer */
 

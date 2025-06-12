@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 3px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -75,46 +75,54 @@ nav {
 .portada {
     position: relative;
     width: 100%;
-    max-width: 100%;
-    justify-content: center;
-    display: flex;
 }
 
-.portada img {
-    width: auto;
+.img-portada {
+    width: 99.5%;
     height: auto;
     display: block;
 }
 
 .contenido.portada {
-    
     position: absolute;
-    top: 20%;
-    left: 20%;
-    padding: 1rem;
-    border-radius: 8px;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    max-width: 610px;
+    width: 90%; /* Usa porcentaje para adaptarse a pantallas pequeñas */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    box-sizing: border-box;
+    margin: 20px;
 }
 
 .contenido.portada h1 {
-    font-size: 2.5em;
+    font-family: "Intro Black";
+    font-size: 96px;
     font-weight: bold;
     color: white;
     margin: 0;
 }
 
 .contenido.portada p {
-    font-size: 1.2em;
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: 300;
     color: white;
     margin: 10px 0;
 }
 
 .contenido.portada button {
+    font-family: "Intro Black";
+    margin-top: 10px;
     background-color: #8c6d4f;
     color: white;
-    font-size: 1em;
-    padding: 10px 20px;
+    font-size: 15;
+    padding: 17px 50px;
     border: none;
-    border-radius: 5px;
+    border-radius: 14px;
     cursor: pointer;
 }
 
@@ -122,13 +130,11 @@ nav {
     background-color: #6b4f3a;
 }
 
-
-
-
-
 /* Estilos servicios*/
 
 .servicios {
+    margin-bottom: 35px;
+    margin-top: 20px;
     text-align: center;
     padding: 40px 20px;
     background-color: #ffffff;
@@ -149,13 +155,19 @@ h2 {
 }
 
 .card {
+    cursor: pointer;
     background: #52A9F0;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     padding: 25px;
     width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
 
 .card img {
     border-radius: 10px;
@@ -178,38 +190,55 @@ h2 {
     color: #ffffff;
 }
 
+
 /* Estilos vision*/
 
 .vision {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   
 }
 
 .vision img {
-  width: auto;
-  height: auto;
+  width: 1234px;
+  height: 457px;
   display: block;
+  border-radius: 10px;
+}
+
+.contenido-vision {
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  transform: translateX(-50%); /* Centra horizontalmente */
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;            /* Justifica texto a la izquierda */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;     /* Alinea hijos a la izquierda */
+  box-sizing: border-box;
 }
 
 .vision div {
   position: absolute;
-  top: 10%;
-  left: 28%;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 8px;
 }
 
 .vision .titulo-seccion {
-  font-size: 2rem;
+  font-family: "Montserrat";
+  font-size: 64px;
   margin: 0 0 1rem 0;
 }
 
 .vision .vision-text {
-  font-size: 1.1rem;
+  color:  #353535;
+  font-size: 28px;
+  font-family: "Intro regular",sans-serif;
   margin-bottom: 1.5rem;
   max-width: 600px;
 }
@@ -218,7 +247,7 @@ h2 {
 
 .mision {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +270,7 @@ h2 {
 
 .titulo-seccion {
     font-size: 64px;
-    font-family: "Intro Bold",sans-serif;
+    font-family: "Montserrat";
     font-weight: bold;
     color: #353535;
     margin-bottom: 15px;
@@ -249,7 +278,6 @@ h2 {
 
 .mision-text {
     padding-left: 20px;
-    
     font-family: "Intro regular",sans-serif;
     font-size: 28px;
     color: #353535;
@@ -257,13 +285,14 @@ h2 {
 }
 
 button {
+    font-family: "Intro Black";
     background-color: #74A97C;
     color: white;
-    padding: 20px 40px;
+    padding: 15px 40px;
     border: none;
     border-radius: 40px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 20px;
     transition: background-color 0.3s ease-in-out;
 }
 
