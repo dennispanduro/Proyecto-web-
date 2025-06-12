@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.hamburguesa {
+  display: none;
+}
+
 nav {
     background-color: #FFC063;
     padding: 20px 60px;
@@ -221,4 +225,119 @@ footer img {
 
 footer img:hover {
     transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+
+  /* NAV */
+  .hamburguesa {
+    display: block;
+    font-size: 32px;
+    color: #9A6211;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  /* Ocultar menú por defecto */
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #FFC063;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Mostrar menú si checkbox está activo */
+  .menu-toggle:checked + .hamburguesa + .nav {
+    display: flex;
+  }
+
+  /* Hacer que el menú se alinee a la derecha */
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav p {
+    margin-top: 10px;
+  }
+
+  .title-tienda {
+    font-size: 40px;
+    padding: 15px 10px;
+  }
+
+  .section-categorias {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 15px;
+    font-size: 20px;
+  }
+
+  .section-categorias h5 {
+    padding: 10px 40px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+   .products {
+    padding: 20px 10px;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cards-productos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-productos {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .card-productos p {
+    font-size: 16px;
+  }
+
+  .card-productos button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;     /* Cambia de fila a columna */
+    align-items: center;        /* Centra los elementos */
+    text-align: center;         /* Centra el texto */
+    padding: 30px 10px;
+    gap: 20px;                  /* Añade espacio entre bloques */
+  }
+
+  footer div {
+    max-width: 100%;
+    margin: 15px 0;
+  }
+
+  .titulo-footer {
+    font-size: 28px;           /* Reduce tamaño del título */
+  }
+
+  footer p,
+  footer ul li {
+    font-size: 14px;           /* Ajusta tamaño de texto */
+  }
+
+  footer img {
+    width: 28px;               /* Escala los íconos */
+    height: auto;
+  }
 }
