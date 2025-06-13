@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*---------------Estilos generales del nav---------------*/
+
 .hamburguesa {
   display: none;
 }
@@ -17,7 +19,6 @@ nav {
     flex-wrap: wrap;
 }
 
-/* Logo "Adopet" */
 .adopet {
     color: #9A6211;
     font-size: 40px;
@@ -25,14 +26,12 @@ nav {
     text-decoration: none;
 }
 
-/* Contenedor de navegación */
 .nav {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-/* Menú de navegación */
 .nav ul {
     font-family: 'Montserrat', sans-serif;
     list-style: none;
@@ -40,7 +39,6 @@ nav {
     gap: 20px;
 }
 
-/* Enlaces del menú */
 .boton-navegacion {
     text-decoration: none;
     color: white;
@@ -54,7 +52,6 @@ nav {
     color: #9A6211;
 }
 
-/* Botón de registro */
 .boton-registrar {
     margin: 0;
     font-size: 14px;
@@ -72,7 +69,7 @@ nav {
     color: white;
 }
 
-/* Estilos categorias */
+/*---------------Estilos categorias---------------*/
 .title-tienda {
     text-align: center;
     padding: 20px 15px;
@@ -111,13 +108,12 @@ h5 {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background-color: #f7fff8; /* Fondo suave opcional */
+    background-color: #f7fff8;
     gap: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-/* Contenedor de cada fila de tarjetas */
 .cards-productos {
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +141,6 @@ h5 {
     margin: 0;
 }
 
-/* Texto del producto */
 .card-productos p {
     font-family: "Intro Black";
     margin-top: 20px;
@@ -155,7 +150,6 @@ h5 {
     margin-bottom: 15px;
 }
 
-/* Botón de comprar */
 .card-productos button {
     font-family: "Montserrat";
     background-color: #47764E;
@@ -173,7 +167,7 @@ h5 {
     background-color: #355a3a;
 }
 
-/* Estilos footer */
+/*---------------Estilos footer---------------*/
 
 footer {
     background-color: #FFC063;
@@ -230,7 +224,7 @@ footer img:hover {
 
 @media (max-width: 768px) {
 
-  /* NAV */
+  /*---------------NAV---------------*/
   .hamburguesa {
     display: block;
     font-size: 32px;
@@ -239,7 +233,6 @@ footer img:hover {
     margin-left: auto;
   }
 
-  /* Ocultar menú por defecto */
   .nav {
     display: none;
     flex-direction: column;
@@ -249,12 +242,10 @@ footer img:hover {
     padding: 10px 0;
   }
 
-  /* Mostrar menú si checkbox está activo */
   .menu-toggle:checked + .hamburguesa + .nav {
     display: flex;
   }
 
-  /* Hacer que el menú se alinee a la derecha */
   .nav ul {
     flex-direction: column;
     align-items: flex-end;
@@ -265,6 +256,8 @@ footer img:hover {
   .nav p {
     margin-top: 10px;
   }
+
+  /*---------------TIENDA---------------*/
 
   .title-tienda {
     font-size: 40px;
@@ -313,13 +306,15 @@ footer img:hover {
     padding: 10px;
     font-size: 14px;
   }
+  
+  /*---------------FOOTER---------------*/
 
   footer {
-    flex-direction: column;     /* Cambia de fila a columna */
-    align-items: center;        /* Centra los elementos */
-    text-align: center;         /* Centra el texto */
+    flex-direction: column;     
+    align-items: center;       
+    text-align: center;        
     padding: 30px 10px;
-    gap: 20px;                  /* Añade espacio entre bloques */
+    gap: 20px;                  
   }
 
   footer div {
@@ -328,16 +323,16 @@ footer img:hover {
   }
 
   .titulo-footer {
-    font-size: 28px;           /* Reduce tamaño del título */
+    font-size: 28px;           
   }
 
   footer p,
   footer ul li {
-    font-size: 14px;           /* Ajusta tamaño de texto */
+    font-size: 14px;           
   }
 
   footer img {
-    width: 28px;               /* Escala los íconos */
+    width: 28px;              
     height: auto;
   }
 }
