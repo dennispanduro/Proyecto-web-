@@ -108,8 +108,8 @@ h5 {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  align-items: center;
+  margin: 40px 300px;
 }
 
 .cards-productos {
